@@ -9,6 +9,7 @@ RUN apt-get update -yq \
         python3-pip \
         python3-pygit2 \
         texlive \
+        texlive-fonts-extra \
  && python3 -m pip install \
         pdfrw==0.4
 
