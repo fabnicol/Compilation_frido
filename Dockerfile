@@ -11,4 +11,4 @@ RUN apt-get update -yq && \
 RUN git clone https://github.com/LaurentClaessens/mazhe \
  && git clone https://github.com/Gjacquenot/pytex
 
-RUN cd mazhe && PYTHONPATH=$pwd/.. python3 -m pytex lst_frido.py
+RUN cd mazhe && PYTHONPATH=$pwd/../pytex python3 -m pytex lst_frido.py
