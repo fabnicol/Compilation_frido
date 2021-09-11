@@ -21,5 +21,7 @@ RUN apt-get update -yq \
 RUN git clone https://github.com/LaurentClaessens/mazhe \
  && git clone https://github.com/Gjacquenot/pytex
 
-RUN cd mazhe && sed -i 's/pytex\.src/pytex/g' lst_frido.py && cat lst_frido.py
-RUN cd mazhe && PYTHONPATH=$pwd/../pytex python3 -m pytex lst_frido.py
+RUN cd mazhe \
+ && sed -i 's/pytex\.src/pytex/g' lst_frido.py \
+ && PYTHONPATH=$pwd/../pytex python3 -m pytex lst_frido.py \
+ && ls -altr
