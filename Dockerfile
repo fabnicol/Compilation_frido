@@ -11,6 +11,7 @@ RUN apt-get update -yq \
         texlive \
         texlive-fonts-extra \
         texlive-latex-extra \
+        texlive-science \
  && python3 -m pip install \
         pdfrw==0.4
 
