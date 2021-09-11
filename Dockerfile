@@ -5,6 +5,7 @@ RUN apt-get update -yq \
         --no-install-recommends \
         ca-certificates \
         git \
+        lmodern \
         python3 \
         python3-pip \
         python3-pygit2 \
