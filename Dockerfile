@@ -9,6 +9,6 @@ RUN apt-get update -yq && \
         texlive
 
 RUN git clone https://github.com/LaurentClaessens/mazhe \
- && git clone https://github.com/LaurentClaessens/pytex
- 
-RUN PATH=$PATH:$pwd/pytex && export PYTHONPATH=$pwd && cd mazhe && pytex lst_frido.py
+ && git clone https://github.com/Gjacquenot/pytex
+
+RUN cd mazhe && PYTHONPATH=$pwd/.. python3 -m pytex lst_frido.py
