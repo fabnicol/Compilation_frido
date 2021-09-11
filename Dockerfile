@@ -1,6 +1,6 @@
 FROM debian:bullseye-slim
-RUN apt-get update -yq && \
-    apt-get install \
+RUN apt-get update -yq \
+ && apt-get install \
         --yes \
         --no-install-recommends \
         ca-certificates \
@@ -8,7 +8,7 @@ RUN apt-get update -yq && \
         python3 \
         python3-pygit2 \
         texlive \
-    python3 -m pip install \
+ && python3 -m pip install \
         pdfrw==0.4
 
 RUN git clone https://github.com/LaurentClaessens/mazhe \
