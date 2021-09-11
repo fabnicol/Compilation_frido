@@ -10,3 +10,5 @@ RUN apt-get update -yq && \
 
 RUN git clone https://github.com/LaurentClaessens/mazhe \
  && git clone https://github.com/LaurentClaessens/pytex
+ 
+RUN PATH=$PATH:$pwd/pytex && cd mazhe && pytex lst_frido.py
