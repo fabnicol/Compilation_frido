@@ -6,9 +6,10 @@ RUN apt-get update -yq && \
         ca-certificates \
         git \
         python3 \
-        python3-pdfrw \
         python3-pygit2 \
-        texlive
+        texlive \
+    python3 -m pip install \
+        pdfrw==0.4
 
 RUN git clone https://github.com/LaurentClaessens/mazhe \
  && git clone https://github.com/Gjacquenot/pytex
