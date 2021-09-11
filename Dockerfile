@@ -11,6 +11,7 @@ RUN apt-get update -yq \
         python3-pygit2 \
         texlive \
         texlive-fonts-extra \
+        texlive-lang-french \
         texlive-latex-extra \
         texlive-plain-generic \
         texlive-science \
