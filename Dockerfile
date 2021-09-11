@@ -1,4 +1,4 @@
-FROM docker:bullseye-slim
+FROM debian:bullseye-slim
 RUN apt-get update -yq && \
     apt-get install \
         --yes \
