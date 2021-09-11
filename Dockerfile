@@ -3,6 +3,7 @@ RUN apt-get update -yq && \
     apt-get install \
         --yes \
         --no-install-recommends \
+        ca-certificates \
         git \
         python3 \
         texlive
