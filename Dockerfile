@@ -6,6 +6,7 @@ RUN apt-get update -yq && \
         ca-certificates \
         git \
         python3 \
+        python3-pygit2 \
         texlive
 
 RUN git clone https://github.com/LaurentClaessens/mazhe \
