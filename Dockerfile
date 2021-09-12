@@ -24,4 +24,9 @@ RUN git clone https://github.com/LaurentClaessens/mazhe \
 RUN cd mazhe \
  && sed -i 's/pytex\.src/pytex/g' lst_frido.py \
  && PYTHONPATH=$pwd/../pytex python3 -m pytex lst_frido.py \
- && ls -altr
+ && ls -altr *.pdf
+
+RUN cd mazhe \
+ && sed -i 's/pytex\.src/pytex/g' lst_giulietta.py \
+ && PYTHONPATH=$pwd/../pytex python3 -m pytex lst_giulietta.py \
+ && ls -altr *.pdf
