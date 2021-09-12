@@ -13,4 +13,5 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: frido
-        path: mazhe/Inter_frido-mazhe_pytex.pdf
+        path: |
+          mazhe/Inter_*.pdf

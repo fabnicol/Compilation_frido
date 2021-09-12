@@ -20,4 +20,7 @@ docker_build_pdf:
      && ls -altr *.pdf \
      && sed -i 's/pytex\.src/pytex/g' lst_giulietta.py \
      && PYTHONPATH=${DOCKER_WORKING_DIRECTORY}/pytex python3 -m pytex lst_giulietta.py \
+     && ls -altr *.pdf \
+     && sed -i 's/pytex\.src/pytex/g' lst_book.py \
+     && PYTHONPATH=${DOCKER_WORKING_DIRECTORY}/pytex python3 -m pytex lst_book.py \
      && ls -altr *.pdf"
