@@ -10,7 +10,7 @@ jobs:
     - name: Build PDF
       id: build_pdf
       run: make docker_build
-     - uses: actions/upload-artifact@v2
-       with:
+    - uses: actions/upload-artifact@v2
+      with:
         name: frido
         path: mazhe/Inter_frido-mazhe_pytex.pdf
