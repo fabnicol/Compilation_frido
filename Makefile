@@ -9,10 +9,8 @@ DOCKER_RUN:=\
 	${DOCKER_IMAGE} \
 	/bin/bash -c
 
-docker_build:
+docker_build_pdf:
 	docker build . -t ${DOCKER_IMAGE}
-
-docker_compile:
 	${DOCKER_RUN} \
 	"git clone https://github.com/LaurentClaessens/mazhe \
      && git clone https://github.com/Gjacquenot/pytex \
