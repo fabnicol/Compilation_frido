@@ -15,8 +15,8 @@ docker_build_pdf:
 	"git clone https://github.com/LaurentClaessens/mazhe \
      && git clone https://github.com/Gjacquenot/pytex \
      && cd mazhe \
-     && sed -i 's/pytex\.src/pytex/g' lst_frido.py \
-     && PYTHONPATH=${DOCKER_WORKING_DIRECTORY}/pytex python3 -m pytex lst_frido.py \
+     && sed -i 's/pytex\.src/pytex/g' lst_lefrido.py \
+     && PYTHONPATH=${DOCKER_WORKING_DIRECTORY}/pytex python3 -m pytex lst_lefrido.py \
      && ls -altr *.pdf \
      && sed -i 's/pytex\.src/pytex/g' lst_giulietta.py \
      && PYTHONPATH=${DOCKER_WORKING_DIRECTORY}/pytex python3 -m pytex lst_giulietta.py \
